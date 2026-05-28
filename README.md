@@ -2,7 +2,7 @@
 
 A tiny Python utility for counting words and characters in a string.
 
-## Fuctions
+## Functions
 
 - `count_words(text)` — returns the number of words
 - `count_chars(text, include_spaces=True)` — returns character count
