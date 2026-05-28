@@ -2,7 +2,7 @@
 
 
 def count_words(text):
-    """Count the number of wrods in a string."""
+    """Count the number of words in a string."""
     if not text or not text.strip():
         return 0
     return len(text.split())
@@ -16,7 +16,7 @@ def count_chars(text, include_spaces=True):
 
 
 def most_common_word(text):
-    """Return the most comman word in the text."""
+    """Return the most common word in the text."""
     if not text.strip():
         return None
     words = text.lower().split()
