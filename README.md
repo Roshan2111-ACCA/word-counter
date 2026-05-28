@@ -1,6 +1,56 @@
-# word-counter
+# ✍️ Word Counter
 
-A tiny Python utility for counting words and characters in a string.
+A clean, simple web app that analyses any text instantly — built with Python and Flask.
+
+🔗 **[Live Demo](https://word-counter.onrender.com)**
+
+---
+
+## What it does
+
+Paste or type any text and get:
+
+- 📝 **Word count**
+- 🔤 **Character count** (with and without spaces)
+- 🏆 **Most common word**
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Backend | Python + Flask |
+| Frontend | HTML + CSS |
+| Hosting | Render (free tier) |
+| Version Control | GitHub |
+
+## Run locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/Roshan2111-ACCA/word-counter.git
+cd word-counter
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Start the app
+python app.py
+
+# 4. Open in browser
+# http://localhost:5000
+```
+
+## Project Structure
+
+```
+word-counter/
+├── app.py               # Flask server
+├── word_counter.py      # Core logic (count words, chars, etc.)
+├── requirements.txt     # Dependencies
+├── render.yaml          # Render deployment config
+└── templates/
+    └── index.html       # Web UI
+```
 
 ## Functions
 
@@ -8,13 +58,6 @@ A tiny Python utility for counting words and characters in a string.
 - `count_chars(text, include_spaces=True)` — returns character count
 - `most_common_word(text)` — returns the most frequent word
 
-## Usage
+---
 
-```python
-from word_counter import count_words, count_chars, most_common_word
-
-text = "the quick brown fox jumps over the lazy dog"
-print(count_words(text))        # 9
-print(count_chars(text))        # 43
-print(most_common_word(text))   # "the"
-```
+Made by [Roshan Mishra](https://github.com/Roshan2111-ACCA)
